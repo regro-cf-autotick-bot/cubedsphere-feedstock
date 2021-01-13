@@ -11,7 +11,7 @@ source:
   sha256: 9e5c3dd65c6ecdc159ea8abc7d3de8a1b0da3dfd343267ed6e452f9d9e828d8b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -24,10 +24,10 @@ requirements:
     - matplotlib-base
     - numpy
     - python >=3.6
-    - scipy
     - xesmf
     - xgcm
     - xmitgcm
+    - xarray
 
 test:
   imports:
