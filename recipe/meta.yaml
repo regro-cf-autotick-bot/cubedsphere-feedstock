@@ -25,7 +25,7 @@ requirements:
     - numpy
     - python >=3.6
     - xesmf
-    - xgcm
+    - xgcm ==0.5.2
     - xmitgcm
     - xarray
     - f90nml
