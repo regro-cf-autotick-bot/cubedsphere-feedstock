@@ -11,7 +11,7 @@ source:
   sha256: 17d82d0d3da94d192bdbd759912184af0b687591da7642d699b6444581335e0e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,10 +25,11 @@ requirements:
     - numpy
     - python >=3.6
     - xesmf
-    - xgcm
+    - xgcm ==0.5.2
     - xmitgcm
     - xarray
     - f90nml
+    - numba
 
 test:
   imports:
