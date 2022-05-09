@@ -29,6 +29,7 @@ requirements:
     - xmitgcm
     - xarray
     - f90nml
+    - numba
 
 test:
   imports:
