@@ -28,6 +28,7 @@ requirements:
     - xgcm
     - xmitgcm
     - xarray
+    - f90nml
 
 test:
   imports:
