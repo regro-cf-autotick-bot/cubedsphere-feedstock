@@ -1,5 +1,5 @@
 {% set name = "cubedsphere" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cubedsphere-{{ version }}.tar.gz
-  sha256: 17d82d0d3da94d192bdbd759912184af0b687591da7642d699b6444581335e0e
+  sha256: 4a86e8fe6ad90dc4ba1ec6905e1c949c494bf5324e54bc81ce65829a308ce3bc
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
