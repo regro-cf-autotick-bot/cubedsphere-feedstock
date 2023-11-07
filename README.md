@@ -1,11 +1,11 @@
-About cubedsphere
-=================
+About cubedsphere-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cubedsphere-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/AaronDavidSchneider/cubedsphere
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cubedsphere-feedstock/blob/main/LICENSE.txt)
 
 Summary: Library for post processing of MITgcm cubed sphere data
 
@@ -144,7 +144,4 @@ Feedstock Maintainers
 =====================
 
 * [@AaronDavidSchneider](https://github.com/AaronDavidSchneider/)
-
-
-<!-- dummy commit to enable rerendering -->
 
