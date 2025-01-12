@@ -7,23 +7,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cubedsphere-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cubedsphere-{{ version }}.tar.gz
   sha256: 4a86e8fe6ad90dc4ba1ec6905e1c949c494bf5324e54bc81ce65829a308ce3bc
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - esmpy
     - matplotlib-base
     - numpy
-    - python >=3.6
+    - python >={{ python_min }}
     - xesmf
     - xgcm ==0.5.2
     - xmitgcm
@@ -39,6 +39,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/AaronDavidSchneider/cubedsphere
